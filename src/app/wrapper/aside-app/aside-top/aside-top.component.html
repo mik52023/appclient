@@ -1,0 +1,18 @@
+   <div class="vertical_line"></div>
+        <div class="top_asside">
+            <div class="upper_video">
+                <div class="secondary_video_details thin_text">
+                    <ul>
+                        <li>{{top_video.name}}</li>
+                        <li>{{top_video.concert_date}}</li>
+                        <li>{{top_video.number_of_views}}views</li>
+                    </ul>
+                </div>
+                <div class="next_on thin_text">next on</div>
+                
+                    <iframe id="video_2" class="secondary_video" allowfullscreen
+                      [src]="videoURL(top_video.embedded)">
+                    </iframe>
+                    <div class="secondary_video_name">{{top_video.s}}</div>
+                </div>
+            </div>
